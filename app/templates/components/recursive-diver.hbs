@@ -1,1 +1,4 @@
-{{yield}}
+{{#if shouldRecur}}
+  {{currentLevel}}...diving deeper...<br>
+  {{recursive-diver maxDepth=maxDepth currentLevel=nextLevel}}
+{{/if}}
